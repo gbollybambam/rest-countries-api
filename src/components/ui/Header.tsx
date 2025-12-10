@@ -8,7 +8,7 @@ export function Header() {
 
     return (
         <header className='sticky top-0 z-50 bg-(--element) shadow-sm transition-colors duration-300'>
-            <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-0">
+            <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-4 md:px-12 lg:px-20">
                 <Link
                     href="/"
                     className="text-sm font-extrabold text-(--foreground) md:text-2xl hover:opacity-80 transition-opacity">

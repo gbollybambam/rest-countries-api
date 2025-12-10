@@ -33,7 +33,7 @@ export default async function CountryDetail({ params }: Props) {
     const nativeName = country.name.nativeName ? Object.values(country.name.nativeName)[0].common : country.name.common;
 
     return (
-        <section className='container mx-auto px-4 py-12 md:px-0 text-(--foreground)'>
+        <section className='mx-auto max-w-[1440px] px-4 py-12 md:px-0 text-(--foreground) md:px-12 lg:px-20'>
             <Link href="/" className="mb-16 inline-flex items-center gap-3 rounded-md bg-(--element) px-8 py-2.5 text-sm font-light shadow-md transition-transform hover:-translate-x-1 hover:shadow-lg">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" className='h-5 w-5'>
                     <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
