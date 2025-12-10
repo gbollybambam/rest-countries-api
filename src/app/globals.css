@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-nunito);
+
+  --color-dark-element: hsl(209, 23%, 22%);
+  --color-dark-bg: hsl(207, 26%, 17%);
+  --color-light-text: hsl(200, 15%, 8%);
+  --color-light-input: hsl(0, 0%, 52%);
+  --color-light-bg: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+:root {
+  --background: var(--color-light-bg);
+  --foreground: var(--color-light-text);
+  --element: var(--color-white);
+  --input: var(--color-light-input);
+}
+
+.dark {
+  --background: var(--color-dark-bg);
+  --foreground: var(--color-white);
+  --element: var(--color-dark-element);
+  --input: var(--color-dark-element);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
